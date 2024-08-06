@@ -1,0 +1,73 @@
+<!-- Formulario de la hoja de personaje -->
+<form class="sheet character-sheet">
+  <!-- Título del personaje -->
+  <h1>{{name}}</h1>
+
+  <!-- Sección de atributos principales -->
+  <div class="attributes">
+    <h2>Atributos</h2>
+    <div class="attribute">
+      <label for="power">Power:</label>
+      <input type="number" name="data.attributes.power.value" value="{{data.attributes.power.value}}" />
+    </div>
+    
+    <div class="attribute">
+      <label for="speed">Speed:</label>
+      <input type="number" name="data.attributes.speed.value" value="{{data.attributes.speed.value}}" />
+    </div>
+    
+    <div class="attribute">
+      <label for="technique">Technique:</label>
+      <input type="number" name="data.attributes.technique.value" value="{{data.attributes.technique.value}}" />
+    </div>
+    
+    <div class="attribute">
+      <label for="intelligence">Intelligence:</label>
+      <input type="number" name="data.attributes.intelligence.value" value="{{data.attributes.intelligence.value}}" />
+    </div>
+    
+    <div class="attribute">
+      <label for="cooperativeness">Cooperativeness:</label>
+      <input type="number" name="data.attributes.cooperativeness.value" value="{{data.attributes.cooperativeness.value}}" />
+    </div>
+  </div>
+
+  <!-- Sección de atributos de combate -->
+  <div class="combat-attributes">
+    <h2>Combat Attributes</h2>
+    <div class="attribute">
+      <label for="health">Health:</label>
+      <input type="number" name="data.attributes.health.value" value="{{data.attributes.health.value}}" max="{{data.attributes.health.max}}" />
+      <span>/ {{data.attributes.health.max}}</span>
+    </div>
+
+    <div class="attribute">
+      <label for="stamina">Stamina:</label>
+      <input type="number" name="data.attributes.stamina.value" value="{{data.attributes.stamina.value}}" max="{{data.attributes.maxStamina}}" />
+      <span>/ {{data.attributes.maxStamina}}</span>
+    </div>
+
+    <div class="attribute">
+      <label for="ac">Armor Class (AC):</label>
+      <input type="number" name="data.attributes.ac.value" value="{{data.attributes.ac.value}}" />
+    </div>
+
+    <div class="attribute">
+      <label for="damage">Damage:</label>
+      <span>{{data.attributes.damage}}</span>
+    </div>
+
+    <div class="attribute">
+      <label for="totalDefense">Total Defense:</label>
+      <span>{{data.attributes.totalDefense}}</span>
+    </div>
+  </div>
+
+  <!-- Sección de acciones -->
+  <div class="actions">
+    <h2>Actions</h2>
+    <button type="button" class="action-button" data-action="attack">Attack</button>
+    <button type="button" class="action-button" data-action="defend">Defend</button>
+    <button type="button" class="action-button" data-action="specialAbility">Special Ability</button>
+  </div>
+</form>

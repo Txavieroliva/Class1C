@@ -1,0 +1,19 @@
+{
+    "actor": {
+      "types": ["character", "npc"],
+      "templates": {
+        "character": {
+          "attributes": {
+            "power": { "value": 0 },  
+            "speed": { "value": 0 },  
+            "technique": { "value": 0 },  
+            "intelligence": { "value": 0 },  
+            "cooperativeness": { "value": 0 },  
+            "health": { "value": 10, "max": 10 },  
+            "stamina": { "value": 5, "max": 5 },  
+            "ac": { "value": 0 }  
+          }
+        }
+      }
+    }
+  }

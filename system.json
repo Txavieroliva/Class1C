@@ -1,0 +1,16 @@
+{
+    "id": "class-1-C",
+    "title": "Class 1-C",
+    "description": "A system for you to make your own Hero School wherever you want.",
+    "version": "0.1.0",
+    "compatibility": {
+      "minimum": 12,
+      "verified": 12
+    }, 
+    "authors": [{
+      "name": "Tityronga",
+      "discord": "tityronga"
+    }],
+    "esmodules": ["scripts/main.js"],
+    "styles": ["styles/main.css"]
+  }
